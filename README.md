@@ -4,7 +4,7 @@ This repository contains the code, data, and models for a comprehensive question
 
 Find the dataset : https://huggingface.co/datasets/toughdata/quora-question-answer-dataset
 
-Find my trained model for downloaded : https://drive.google.com/file/d/1n5JASV3MVHFPqIu67FSusumDERHrghoQ/view?usp=sharing
+Find my trained model for download : https://drive.google.com/file/d/1n5JASV3MVHFPqIu67FSusumDERHrghoQ/view?usp=sharing
 
 ## Project Overview
 
