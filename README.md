@@ -1,72 +1,90 @@
-##Quora Question Answer Dataset - NLP Project
+# Quora Question Answer Dataset - NLP Project
+
 This repository contains the code, data, and models for a comprehensive question-answering system built on the Quora Question Answer Dataset. The project involves data preprocessing, fine-tuning a GPT-2 model, and evaluating similarity-based query answering techniques.
 
-#Project Overview
+## Project Overview
+
 The primary objective is to analyze and preprocess the dataset for advanced NLP applications and implement effective question-answering systems. The project is structured into three main sections:
 
-#Data Preprocessing and Analysis
-Fine-Tuning GPT-2
-Similarity-Based Query Answering
-Repository Structure
-Data_Analysis/
-Contains scripts for data exploration, cleaning, and visualization. Includes histograms, word clouds, and n-gram analysis.
+1. **Data Preprocessing and Analysis**
+2. **Fine-Tuning GPT-2**
+3. **Similarity-Based Query Answering**
 
-GPT_QuestionAnswer.ipynb
-Jupyter Notebook for training the GPT-2 model on the Quora dataset. Includes steps for data preparation, model fine-tuning, and generating responses.
+## Repository Structure
 
-gpt2-finetuned.zip
-The trained GPT-2 model, ready for use in generating responses.
+- **Data_Analysis/**  
+  Contains scripts for data exploration, cleaning, and visualization. Includes histograms, word clouds, and n-gram analysis.
 
-qa_dataset/
-The dataset used in the project, formatted for easy loading and processing.
+- **GPT_QuestionAnswer.ipynb**  
+  Jupyter Notebook for training the GPT-2 model on the Quora dataset. Includes steps for data preparation, model fine-tuning, and generating responses.
 
-report.pdf
-Comprehensive report detailing the development processes, model performance, and findings.
+- **gpt2-finetuned.zip**  
+  The trained GPT-2 model, ready for use in generating responses.
 
-similarity_1.py and similarity_2.py
-Scripts for implementing and evaluating similarity-based query answering models. Includes Bag of Words (BOW), Word2Vec, GloVe, and BERT approaches.
+- **qa_dataset/**  
+  The dataset used in the project, formatted for easy loading and processing.
 
-Data Preprocessing and Analysis
-Loading and Initial Inspection
+- **report.pdf**  
+  Comprehensive report detailing the development processes, model performance, and findings.
 
-Dataset loaded from JSONL file using pandas.
-Initial inspection reveals 56,402 entries with no missing values.
-Data Cleaning
+- **similarity_1.py** and **similarity_2.py**  
+  Scripts for implementing and evaluating similarity-based query answering models. Includes Bag of Words (BOW), Word2Vec, GloVe, and BERT approaches.
 
-Duplicate entries removed.
-Missing value handling demonstrated.
-Text Preprocessing
+## Data Preprocessing and Analysis
 
-Tokenization, stopword removal, stemming, and lemmatization applied.
-Data Analysis
+### Loading and Initial Inspection
 
-Visualizations include question length distribution, word clouds, and n-gram analysis.
-Fine-Tuning GPT-2
-Dataset Preparation
+- Dataset loaded from JSONL file using pandas.
+- Initial inspection reveals 56,402 entries with no missing values.
 
-Data loaded from CSV, combined into a text string, and formatted for Hugging Face Dataset.
-Model Fine-Tuning
+### Data Cleaning
 
-GPT-2 tokenizer and model loaded, training configured, and model trained and saved.
-Model Interaction
+- Duplicate entries removed.
+- Missing value handling demonstrated.
 
-Interface created using Gradio for user interaction.
-Model Evaluation
+### Text Preprocessing
 
-Evaluated using ROUGE, BLEU, and F1-score metrics.
-Similarity-Based Query Answering
-Introduction
+- Tokenization, stopword removal, stemming, and lemmatization applied.
 
-Objective: Match queries with the closest predefined question based on semantic similarity.
-Models and Techniques
+### Data Analysis
 
-Bag of Words (BOW)
-Word2Vec
-GloVe
-BERT
-Comparison of Approaches
+- Visualizations include question length distribution, word clouds, and n-gram analysis.
 
-Analysis of the performance and computational efficiency of each approach.
-Conclusion
+## Fine-Tuning GPT-2
 
-BERT provides the best performance for complex queries, while BOW, Word2Vec, and GloVe offer varying balances of performance and efficiency.
+### Dataset Preparation
+
+- Data loaded from CSV, combined into a text string, and formatted for Hugging Face Dataset.
+
+### Model Fine-Tuning
+
+- GPT-2 tokenizer and model loaded, training configured, and model trained and saved.
+
+### Model Interaction
+
+- Interface created using Gradio for user interaction.
+
+### Model Evaluation
+
+- Evaluated using ROUGE, BLEU, and F1-score metrics.
+
+## Similarity-Based Query Answering
+
+### Introduction
+
+- **Objective:** Match queries with the closest predefined question based on semantic similarity.
+
+### Models and Techniques
+
+- **Bag of Words (BOW)**
+- **Word2Vec**
+- **GloVe**
+- **BERT**
+
+### Comparison of Approaches
+
+- Analysis of the performance and computational efficiency of each approach.
+
+### Conclusion
+
+- **BERT** provides the best performance for complex queries, while **BOW**, **Word2Vec**, and **GloVe** offer varying balances of performance and efficiency.
