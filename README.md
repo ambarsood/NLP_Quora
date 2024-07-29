@@ -1,10 +1,10 @@
-Quora Question Answer Dataset - NLP Project
+##Quora Question Answer Dataset - NLP Project
 This repository contains the code, data, and models for a comprehensive question-answering system built on the Quora Question Answer Dataset. The project involves data preprocessing, fine-tuning a GPT-2 model, and evaluating similarity-based query answering techniques.
 
-Project Overview
+#Project Overview
 The primary objective is to analyze and preprocess the dataset for advanced NLP applications and implement effective question-answering systems. The project is structured into three main sections:
 
-Data Preprocessing and Analysis
+#Data Preprocessing and Analysis
 Fine-Tuning GPT-2
 Similarity-Based Query Answering
 Repository Structure
